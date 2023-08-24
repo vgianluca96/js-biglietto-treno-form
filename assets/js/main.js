@@ -29,8 +29,12 @@ function ticketPrice () {
     // Applicazione sconto
     if (discount == 'discount20') {
         price = price * 0.8;
+        offer = 'Sonto 20% riservato a minorenni'
     } else if (discount == 'discount40') {
         price = price * 0.6;
+        offer = 'Sconto 40% riservato a over 65';
+    } else if (discount == 'discount0') {
+        offer = 'Prezzo base senza sconti';
     }
 
     // Arrotondamento prezzo
@@ -38,8 +42,11 @@ function ticketPrice () {
 
     // console.log(price);
 
+    // Stampa a video dei dettagli del biglietto
+    document.getElementById('passengerName').innerHTML = userName;
+    document.getElementById('offer').innerHTML = offer;
     document.getElementById('outputPrice').innerHTML = price;
-    
+
     
 }
 

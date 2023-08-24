@@ -8,14 +8,14 @@
 }
 
 body {
-    background-color: lightgreen;
+    background-color: rgb(216, 234, 216);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
 header {
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem;
 }
 
 
@@ -25,4 +25,80 @@ header {
     width: 80%;
     max-width: 1170px;
     margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+.fd-col {
+    flex-direction: column;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.py-5 {
+    padding: 5px 0;;
+}
+
+.py-10 {
+    padding: 10px 0;
+}
+
+.py-15 {
+    padding: 15px 0;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.h-15 {
+    height: 15px;
+}
+
+.col-4 {
+    width: calc(100% /12 *4);
+}
+
+.border-bot {
+    border-bottom: 1px solid darkgreen;
+}
+
+.ticket-container {
+    background-color: lightgreen;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.text-descr {
+    font-weight: bold;
+}
+
+.button-style {
+    border: 0;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
 }
