@@ -1,0 +1,28 @@
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+/* Utilities */
+
+.container {
+    width: 80%;
+    max-width: 1170px;
+    margin: auto;
+}
