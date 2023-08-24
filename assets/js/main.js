@@ -16,6 +16,10 @@ function ticketPrice() {
     distanceKm = document.getElementById('InputdistanceKm').value;
     discount = document.getElementById('userAge').value;
 
+    // Controllo sul valore digitato per la distanza
+    if (isNaN(distanceKm)) {
+        alert('Digitare un numero nella distanza da percorre');
+    }
 
     // Prezzo biglietto
     price = unitPrice * distanceKm;
