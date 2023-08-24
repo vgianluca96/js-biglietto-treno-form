@@ -18,7 +18,12 @@ function ticketPrice() {
 
     // Controllo sul valore digitato per la distanza
     if (isNaN(distanceKm)) {
-        alert('Digitare un numero nella distanza da percorre');
+        alert('Nel campo distanza deve essere digitato un numero');
+    }
+
+    // Controllo se è stato digitato qualcosa
+    if (userName == '' || distanceKm == 0) {
+        alert('Compilare i campi nome e distanza');
     }
 
     // Prezzo biglietto
