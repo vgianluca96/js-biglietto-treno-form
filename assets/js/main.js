@@ -9,7 +9,7 @@ let discount;
 const unitPrice = 0.21;
 
 // function di calcolo del prezzo del biglietto
-function ticketPrice () {
+function ticketPrice() {
 
     // Salvataggio variabili
     userName = document.getElementById('InputUserName').value;
@@ -47,7 +47,11 @@ function ticketPrice () {
     document.getElementById('offer').innerHTML = offer;
     document.getElementById('outputPrice').innerHTML = price;
 
-    
+}
+
+function resetValues() {
+    document.getElementById('InputUserName').value = '';
+    document.getElementById('InputdistanceKm').value = '';
 }
 
 
